@@ -1,0 +1,158 @@
+@import '../variable/variable.scss';
+
+.contacts{
+    padding: 15px 0 120px;
+    &__list, &__form{
+    width: 870px;
+    } 
+
+    &__title{
+        margin-bottom: 40px;
+        line-height: 1.3em;
+    }
+
+    &__info {
+        padding: 59px 0px 59px 60px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    &__form{
+        background: #121212;
+        padding: 60px 65px;
+        border-radius: 15px;
+    }
+}
+
+.contacts__info, .social__networks, .social__item{
+    background: #FAFAFA;
+    border: 1px solid #121212;
+    border-radius: 15px;
+}
+
+.social {
+    &__item {
+        width: 202px;
+        height: 202px;
+        border-radius: 10px;
+        align-items:center;
+        justify-content: center;
+    }
+
+    &__link-icon:hover svg path,
+    &__link-icon:focus svg path,
+    &__link-icon:active svg path{
+        fill: $red;
+    }
+
+    &__networks {
+        padding: 13px 57px 12px 60px;
+        margin-bottom: 20px;
+    }
+
+    &__media{
+        font-family: 'DMSans-SemiBold', sans-serif;
+        color: $black;
+        font-size: 2.5em;
+        line-height: 1.3em;
+        text-transform: uppercase;
+    }
+}
+
+
+.types{
+    &__call,&__email,&__geolocation{
+        margin-bottom: 10px;
+        gap: 10px;
+        font-family: 'Inter-Medium', sans-serif;
+        font-size: 0.8em;
+        line-height: 19px;
+        color:#121212;
+        align-items:center;
+    }
+
+    &__call a:hover,.types__call a:focus,.types__call a:active,
+    &__email a:hover,&__email a:focus,&__email a:active,
+    &__geolocation a:hover,&__geolocation a:focus,&__geolocation a:active{
+        color: $red;
+        font-weight: 500;
+    }
+
+    &__icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        background-color: $red;
+    }
+
+    &__geolocation{
+        margin-bottom: 0;
+    }
+}
+
+.form{
+    &__subtitle{
+        font-family: 'DMSans-Medium',sans-serif;
+        line-height: 1.3125em;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+
+    & input,
+    & textarea{
+        width: 100%;
+        border: 1px solid #9F9F9F;
+        border-radius: 10px;
+
+        &::placeholder,
+        &::placeholder{
+        font-size: 0.8em;
+        line-height: 21px;
+        color: #FAFAFA;
+
+        &:hover, &:focus, &:active,
+        &:hover, &:focus, &:active {
+            border-color: $red;
+        }
+    
+        &:hover::placeholder, &:focus::placeholder, &:active::placeholder,
+        &:hover::placeholder, &:focus::placeholder, &:active::placeholder{
+            color:$red;
+        }
+    }
+    }
+
+    & input{
+        margin-bottom: 10px;
+        padding: 18px 20px;
+    }
+    
+    & textarea{
+        padding: 16.5px 20px;
+        margin-bottom: 37px;
+    }
+
+    &__button{
+        width: 100%;
+        font-family: 'DMSans-Medium',sans-serif;
+        
+        &:hover, &:focus, &:active{
+            background-color: $white;
+            color: $black;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

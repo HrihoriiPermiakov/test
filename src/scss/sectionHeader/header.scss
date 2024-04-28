@@ -1,0 +1,39 @@
+@import '../variable/variable.scss';
+
+.header{
+    background-color: $white;
+    padding-bottom: 190px;
+
+    &__wrap {
+        background-color: #121212;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    
+    &__content{
+        padding: 0 55px 0 100px;
+        gap: 33px;
+    }
+    &__illustration {
+        position: relative;
+
+        & img {
+            position: absolute;
+            top: -80px;
+        }
+    }
+    
+    & .block__title {
+        font-size: 2.25em;
+        max-width: 908px;
+    }
+
+}
+
+
+
+
+
+
+
+

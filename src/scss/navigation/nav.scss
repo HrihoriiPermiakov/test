@@ -1,0 +1,53 @@
+@import '../variable/variable.scss';
+
+.nav {
+    padding: 12.5px 0;
+    margin-bottom: 116px;
+    &__list {
+        gap: 60px;
+        margin-left: 145px;
+    }
+    
+    &__item {
+        padding: 0 1.5px;
+
+        &:first-child {
+            padding: 0 3.5px;
+        }
+    }
+    
+    &__link {
+        font-size: 0.9em;
+        line-height: 1.15em;
+        letter-spacing: 0.2px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $red;
+        }
+    }
+    
+    &__button{
+        font-size: 0.8em;
+        line-height: 1.05em;
+        letter-spacing: 0.5px;
+        padding: 12.11px 50px;
+        color: #F9FCFE;
+        font-weight: 400;
+
+        &:hover, &:focus, &:active{
+            background-color: $white;
+            color: $black;
+        }
+    }   
+}
+
+
+
+
+
+
+
+
+

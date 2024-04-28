@@ -1,0 +1,125 @@
+@import '../variable/variable.scss';
+
+.services{
+    background-color: #121212;
+    border-radius: 40px;
+    padding: 120px  0 120px;
+
+    &__title {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 53px;
+    }
+    
+    &__list{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 38px;
+    }
+    
+    &__item{
+        width: 560px;
+        background-color: $white;
+        border-radius: 30px;
+        padding: 40px 40px;
+
+        &:last-child {
+            width: 100%;
+            padding: 62px 63px 60px;
+
+            & .subtitle {
+                margin-bottom: 20px;
+                line-height: 1.4em;
+            }
+        }
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6){
+        padding-bottom: 67px;
+    }
+        
+        & img {
+            margin-bottom: 40px;
+        }
+
+        & li {
+            position: relative;
+            padding-left: 17px;
+            margin-bottom: 10px;
+            line-height: 1.3em;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $black;
+            }
+
+        }
+    }
+
+    
+
+        & .two-row::before {
+            top: 25%;
+        }
+        
+        & .three-row::before{
+            top: 25%;
+        } 
+        & .three-four::before {
+            top: 15%;
+        }
+        
+        & p {
+            letter-spacing: 0.3px;
+            margin-bottom: 42px;
+        }
+
+        
+    
+    &__subtitle{
+        color: $red;
+        margin-bottom: 19px;
+    }
+    
+    &__item ul, .services__item p  {
+        font-family: 'DMSans-Light', sans-serif;
+        color: $black;
+    }
+
+    &__button {
+        padding: 15px 56px;
+    }
+    
+    &__button:hover, &__button:focus, &__button:active{
+        background-color: $black;
+        color: $white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

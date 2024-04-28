@@ -1,0 +1,128 @@
+@import '../variable/variable.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+[class*="__container"] {
+	width: 1760px;
+	margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    font-family: 'DMSans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: $white
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a,a:hover, a:focus {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active,
+textarea, textarea:hover, textarea:focus, textarea:active,
+a, a:hover, a:active, a:focus {
+	outline: none;
+}
+a, a:hover, a:active, a:focus {
+	outline: none;
+}
+
+button, input, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+img {
+    display: block;
+}
+
+p,h1,h2,h3,ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3{
+    font-weight: 600;
+}
+
+ul, li {
+	display: block;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+	color:inherit;
+}
+
+.nav, .nav__list, .header__content, .nav__wrap, .icon-arithmetic,
+.block__item, .atouts__item, .atouts__point, .bienvenue__wrap,
+.services__list, .platform__content, .platform__mobile,
+.platform__collaborative, .faq__container, .faq__item,
+.contacts__container, .social__list,
+.types__call,.types__email,.types__geolocation, .types__icon,
+.social__networks, .social__item {
+    display: flex;
+}
+
+.nav, .nav__list, .nav__wrap, .icon-arithmetic, .atouts__item, .platform__content, .platform__collaborative,
+.faq__item, .social__list, .contacts__container,  .social__networks{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link, .button, input, textarea {
+    font-weight: 400;
+}
+
+.button {
+    outline: none;
+    border: none;
+    background-color: $red;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 102px;
+    font: inherit;
+    line-height: 1.3em;
+    color: inherit;
+}
+.title {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.6em;
+    line-height: 1.3125em;
+    text-transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

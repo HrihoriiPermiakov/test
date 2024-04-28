@@ -1,0 +1,79 @@
+@import '../variable/variable.scss';
+
+.bienvenue{
+    padding: 118px 0 160px;
+    background: #FAFAFA;
+
+    &__wrap {
+        border: 2px solid #121212;
+        border-radius: 15px;
+        column-gap: 110px; 
+        padding: 74px 60px 73px;
+        justify-content: flex-start;
+    }
+    
+    &__block {
+        width: 840px;
+        padding: 0;
+
+        & p {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            line-height: 1.35em;
+            color: #1E1E1E;
+        }
+
+        & .block__list{
+            margin-bottom: 25px;
+        }
+        
+        & .block__title{
+            color: #1E1E1E;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 17px;
+        } 
+
+        & .block__item  {
+            border-color: $black;
+        }
+
+        & .block__button{
+            margin-bottom: 0;
+            padding: 15px 97px;
+    
+            &:hover,
+            &:focus,
+            &:active{
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+    &__emblem {
+        width: 690px;
+        position: relative;
+
+        & img {
+            position: absolute;
+            top: -63px;
+            left: 0;
+        }
+    }
+
+    & .block p {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* Cabinet de taille humaine situé à Marseille, dirigé par Viorica PION, expert-comptable et commissaire aux comptes, notre objectif premier est d’entretenir une relation de proximité et de confiance afin de vous conseiller au quotidien. Grace à nos méthodes structurées et informatisées, l’expert-comptable vous est entièrement dédié, il est l’interlocuteur principal dans le conseil et le suivi de votre dossier. Nous nous engageons à vous apporter une réponse rapide et personnalisée à toutes vos demandes. Nous sommes à votre disposition pour vous rencontrer en face à face, en visio, par téléphone ou par email. */
+
+
+
+
+

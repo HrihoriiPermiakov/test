@@ -1,0 +1,43 @@
+@import '../variable/variable.scss';
+.footer{
+    background-color: #121212;
+    & .social__list{
+        margin-top: 27px;
+        gap: 21px;  
+    }
+    & .social__item {
+            width: 52px;
+            height: 52px;
+            border-radius: 10px;
+
+            & svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        
+    & .nav {
+        padding: 80px 0;
+        margin-bottom: 0;
+        &__list{
+            gap: 60px;
+            margin-left: 120px;
+        }
+    }
+    
+    &__copyright{
+        text-align: center;
+        border-top: 1px solid $white ;
+        font-weight: 400;
+        color: #FCF7F4;
+        font-size: 0.7em;
+        line-height: 18px;
+        padding: 20px 0 30px;
+    }
+}
+
+
+
+
+
