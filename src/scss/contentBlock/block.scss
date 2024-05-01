@@ -1,9 +1,9 @@
 @import '../variable/variable.scss';
 
 .block {
-    width: 910px;
+    width: 47.396vw;
     position: relative;
-    padding-bottom: 57px;
+    padding-bottom: 6.2vh;
 
     &__title{
         font-size: 2.25em;
@@ -25,15 +25,15 @@
     }
 
     &__title {
-        margin-bottom: 10px;
+        margin-bottom: 0.926vh;
     }
     
     & p {
         line-height: 1.3em; 
 
         &:first-of-type{
-            width: 666px;
-            margin-bottom: 40px;
+            max-width: 666px;
+            margin-bottom: 4.4vh;
         }
 
         & span {
@@ -42,7 +42,7 @@
         }
     }
     &__button {
-        margin-bottom: 40px; 
+        margin-bottom: 4.4vh; 
 
         &:hover, &:focus, &:active{
             background-color: $white;
@@ -62,26 +62,22 @@
         transform: matrix(0.95, 0.31, -0.32, 0.95, 0, 0);
     }
     
-    & .header__block p {
-        width: 666px; 
-    }
-    
     & .rating {
         position: absolute;
-        top: -67px;
-        right: 182px;
+        top: -7.2vh;
+        right: 9.46vw;
     }
     
     & .goal {
         position: absolute;
-        top: 113px;
+        top: 12.3vh;
         right: 0;
     }
     
     & .calendar{
         position: absolute;
-        top: 311.5px;
-        right: 271px;
+        top: 34vh;
+        right: 14.115vw;
     }
 }
 

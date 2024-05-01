@@ -7,14 +7,14 @@
         text-align: center;
         color: $black;
     
-        margin-bottom: 48px; 
+        margin-bottom: 5.35vh; 
     }
     
     &__item{
         background-color: #121212;
-        border-radius: 15px;
-        margin-bottom: 20px;
-        padding: 62px 60px;
+        border-radius: 1.389vh;
+        margin-bottom: 2.2vh;
+        padding: 6.75vh 3.125vw;
 
         &:last-child{
             margin-bottom: 0;
@@ -36,7 +36,7 @@
     &__description{
         max-width: 650px;
         letter-spacing: 0.5px;
-        margin-bottom: 8x;
+        // margin-bottom: 8px;
         line-height: 1.3em;
     }
 

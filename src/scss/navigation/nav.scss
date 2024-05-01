@@ -1,25 +1,25 @@
 @import '../variable/variable.scss';
 
 .nav {
-    padding: 12.5px 0;
-    margin-bottom: 116px;
+    padding: 1.1574vh 0;
+    margin-bottom: 12.7vh;
     &__list {
-        gap: 60px;
-        margin-left: 145px;
+        gap: 3.125vw;
+        margin-left: 7vw;
     }
     
     &__item {
-        padding: 0 1.5px;
+        padding: 0 0.078vw;
 
         &:first-child {
-            padding: 0 3.5px;
+            padding: 0 0.182vw;
         }
     }
     
     &__link {
         font-size: 0.9em;
         line-height: 1.15em;
-        letter-spacing: 0.2px;
+        // letter-spacing: 0.2px;
 
         &:hover,
         &:focus,
@@ -31,8 +31,7 @@
     &__button{
         font-size: 0.8em;
         line-height: 1.05em;
-        letter-spacing: 0.5px;
-        padding: 12.11px 50px;
+        padding: 1.111vh 2.75vw;
         color: #F9FCFE;
         font-weight: 400;
 
