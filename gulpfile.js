@@ -9,7 +9,9 @@ const browserSync = require('browser-sync').create()
 const svgmin = require('gulp-svgmin');
 const del = require('del');
 const concat = require('gulp-concat');
-const groupCssMediaQueries = require('gulp-group-css-media-queries');
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
+// const groupCssMediaQueries = require('gulp-group-css-media-queries');
 
 // Шляхи до вихідних та результативних файлів
 const paths = {
@@ -28,6 +30,11 @@ const paths = {
   html: {
     src: 'src/*.html',
     dest: 'dist/'
+  },
+
+  scripts: {
+    src: 'src/js/**/*.js',
+    dest: 'dist/js/'
   }
 };
 
@@ -81,6 +88,18 @@ function optimizeSvg() {
     .pipe(gulp.dest('dist/img/'));
 }
 
+function scripts() {
+  return gulp
+    .src(paths.scripts.src)
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(concat('script.js')) // Опціонально, якщо потрібно об'єднати декілька файлів в один
+    .pipe(uglify()) // Мініфікація JavaScript файлів
+    .pipe(gulp.dest(paths.scripts.dest))
+    .pipe(browserSync.stream());
+}
+
 // Слідкування за змінами у файлах SCSS, HTML, зображеннях та шрифтах
 function watch() {
   browserSync.init({
@@ -93,12 +112,13 @@ function watch() {
   gulp.watch(paths.images.src, images);
   gulp.watch(paths.fonts.src, fonts);
   gulp.watch(paths.html.src, html);
+  gulp.watch(paths.html.src, scripts);
 }
 
 // Збірка за замовчуванням
 exports.default = gulp.series(
   clean,
-  gulp.parallel(styles, images, fonts, html, optimizeSvg),
+  gulp.parallel(styles, scripts, images, fonts, html, optimizeSvg),
   watch
 );
 

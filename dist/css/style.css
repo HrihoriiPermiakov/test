@@ -918,6 +918,40 @@ a, a:hover, a:active {
   font-weight: normal;
   font-style: normal;
 }
+.nav {
+  padding: 12.5px 0;
+  margin-bottom: 116px;
+}
+.nav__list {
+  gap: 60px;
+  margin-left: 145px;
+}
+.nav__item {
+  padding: 0 1.5px;
+}
+.nav__item:first-child {
+  padding: 0 3.5px;
+}
+.nav__link {
+  font-size: 0.9em;
+  line-height: 1.15em;
+  letter-spacing: 0.2px;
+}
+.nav__link:hover, .nav__link:focus, .nav__link:active {
+  color: #E73A2E;
+}
+.nav__button {
+  font-size: 0.8em;
+  line-height: 1.05em;
+  letter-spacing: 0.5px;
+  padding: 12.11px 50px;
+  color: #F9FCFE;
+  font-weight: 400;
+}
+.nav__button:hover, .nav__button:focus, .nav__button:active {
+  background-color: #fff;
+  color: #000;
+}
 .footer {
   background-color: #121212;
 }
@@ -1008,40 +1042,6 @@ a, a:hover, a:active {
 }
 
 /* Cabinet de taille humaine situé à Marseille, dirigé par Viorica PION, expert-comptable et commissaire aux comptes, notre objectif premier est d’entretenir une relation de proximité et de confiance afin de vous conseiller au quotidien. Grace à nos méthodes structurées et informatisées, l’expert-comptable vous est entièrement dédié, il est l’interlocuteur principal dans le conseil et le suivi de votre dossier. Nous nous engageons à vous apporter une réponse rapide et personnalisée à toutes vos demandes. Nous sommes à votre disposition pour vous rencontrer en face à face, en visio, par téléphone ou par email. */
-.nav {
-  padding: 12.5px 0;
-  margin-bottom: 116px;
-}
-.nav__list {
-  gap: 60px;
-  margin-left: 145px;
-}
-.nav__item {
-  padding: 0 1.5px;
-}
-.nav__item:first-child {
-  padding: 0 3.5px;
-}
-.nav__link {
-  font-size: 0.9em;
-  line-height: 1.15em;
-  letter-spacing: 0.2px;
-}
-.nav__link:hover, .nav__link:focus, .nav__link:active {
-  color: #E73A2E;
-}
-.nav__button {
-  font-size: 0.8em;
-  line-height: 1.05em;
-  letter-spacing: 0.5px;
-  padding: 12.11px 50px;
-  color: #F9FCFE;
-  font-weight: 400;
-}
-.nav__button:hover, .nav__button:focus, .nav__button:active {
-  background-color: #fff;
-  color: #000;
-}
 .contacts {
   padding: 15px 0 120px;
 }
